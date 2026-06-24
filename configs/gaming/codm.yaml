@@ -1,0 +1,12 @@
+path: https://callofdutymobile.vercel.app/user/%s
+mode: JSON
+category: gaming
+timeout: 5
+selectors:
+  nickname: nickname
+  country_code: countryCode
+  country_id: countryId
+  level: level.current
+  rank: rank.multiplayerRank
+  rank_rating: rank.rating
+  avatar: pic
