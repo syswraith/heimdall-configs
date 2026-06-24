@@ -1,0 +1,15 @@
+path: https://lichess.org/@/%s
+mode: HTTP
+category: gaming
+timeout: 5
+container: body
+selectors:
+  error: '#main-wrap > main > h1'
+  joined: '#us_profile > div.profile-side > div > div > p:nth-child(2)'
+  bio: '#us_profile > div.profile-side > div > p'
+  country: '#us_profile > div.profile-side > div > div > div.location'
+  bullet: '#main-wrap > main > aside > div > a:nth-child(1) > span > rating > strong'
+  blitz: '#main-wrap > main > aside > div > a:nth-child(2) > span > rating > strong'
+  rapid: '#main-wrap > main > aside > div > a:nth-child(3) > span > rating > strong'
+  classical: '#main-wrap > main > aside > div > a:nth-child(4) > span > rating > strong'
+  puzzles: '#main-wrap > main > aside > div > a:nth-child(7) > span > rating > strong'

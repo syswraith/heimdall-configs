@@ -1,0 +1,4 @@
+path: https://www.chess.com/callback/leagues/user-league/search/%s
+mode: JSON
+category: gaming
+timeout: 5

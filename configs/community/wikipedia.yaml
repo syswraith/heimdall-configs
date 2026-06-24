@@ -1,0 +1,9 @@
+path: https://en.wikipedia.org/wiki/User:%s
+mode: HTTP
+category: community
+timeout: 5
+container: '#mw-content-text'
+selectors:
+  error: div.cdx-message--warning.mw-userpage-userdoesnotexist.cdx-message.cdx-message--block
+    > div
+  bio: div.mw-content-ltr.mw-parser-output > p

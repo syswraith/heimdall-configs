@@ -1,0 +1,4 @@
+path: https://api.monkeytype.com/users/%s/profile?isUid=false
+mode: JSON
+category: community
+timeout: 5

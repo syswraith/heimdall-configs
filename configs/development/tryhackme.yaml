@@ -1,0 +1,30 @@
+path: https://tryhackme.com/api/v2/public-profile?username=%s
+mode: HEADLESS_JSON
+category: development
+timeout: 15
+sleep: 5
+selectors:
+  avatar: data.avatar
+  username: data.username
+  level: data.level
+  country: data.country
+  about: data.about
+  linkedin: data.linkedInUsername
+  github: data.githubUsername
+  twitter: data.twitterUsername
+  instagram: data.instagramUsername
+  website: data.personalWebsite
+  reddit: data.redditUsername
+  discord: data.discordUsername
+  calendly: data.calendlyUrl
+  total-points: data.totalPoints
+  badges: data.badgesNumber
+  rooms-completed: data.completedRoomsNumber
+  streak: data.streak
+  rank: data.rank
+  top-percentage: data.topPercentage
+  top-ten-percent: data.isInTopTenPercent
+  badge-image: data.badgeImageURL
+  role: data.userRole
+  league-tier: data.leagueTier
+  joined: data.dateSignUp

@@ -1,0 +1,15 @@
+path: https://codechef.com/users/%s
+mode: HTTP
+category: development
+timeout: 5
+container: body
+redirects_to: https://www.codechef.com/
+selectors:
+  error: ''
+  rating: '#rating-block-all > div.rating-header.text-center > div.rating-number'
+  global-rank: '#rating-block-all > div.rating-ranks > ul > li:nth-child(1) > a >
+    strong'
+  country-rank: '#rating-block-all > div.rating-ranks > ul > li:nth-child(2) > a >
+    strong'
+  country: body > main > div > div > div > div > div > section.user-details > ul >
+    li:nth-child(2) > span > span

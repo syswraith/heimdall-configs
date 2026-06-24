@@ -1,0 +1,12 @@
+path: https://api.vxtwitter.com/%s
+mode: JSON
+category: social_media
+timeout: 5
+selectors:
+  created_at: created_at
+  description: description
+  followers: followers_count
+  following: following_count
+  location: location
+  pfp: profile_image_url
+  tweets: tweet_count
