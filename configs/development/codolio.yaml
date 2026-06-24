@@ -1,0 +1,39 @@
+path: https://api.codolio.com/profile?userKey=%s
+mode: JSON
+category: development
+timeout: 5
+selectors:
+  username: data.profileName
+  first_name: data.firstName
+  last_name: data.secondName
+  email: data.email
+  avatar: data.imageUrl
+  country: data.userDetails.userPersonalDetails.country
+  degree: data.userDetails.userPersonalDetails.degree
+  branch: data.userDetails.userPersonalDetails.branch
+  graduation_year: data.userDetails.userPersonalDetails.yearOfGraduation
+  github: data.userDetails.githubProfile
+  college: data.userDetails.userPersonalDetails.collegeDetails.collegeName
+  leetcode_handle: data.platformProfiles.platformProfiles.0.userStats.handle
+  leetcode_rating: data.platformProfiles.platformProfiles.0.userStats.currentRating
+  leetcode_max_rating: data.platformProfiles.platformProfiles.0.userStats.maxRating
+  leetcode_solved: data.platformProfiles.platformProfiles.0.totalQuestionStats.totalQuestionCounts
+  leetcode_easy: data.platformProfiles.platformProfiles.0.totalQuestionStats.easyQuestionCounts
+  leetcode_medium: data.platformProfiles.platformProfiles.0.totalQuestionStats.mediumQuestionCounts
+  leetcode_hard: data.platformProfiles.platformProfiles.0.totalQuestionStats.hardQuestionCounts
+  leetcode_avatar: data.platformProfiles.platformProfiles.0.userStats.titlePhoto
+  codeforces_handle: data.platformProfiles.platformProfiles.1.userStats.handle
+  codeforces_rating: data.platformProfiles.platformProfiles.1.userStats.currentRating
+  codeforces_max_rating: data.platformProfiles.platformProfiles.1.userStats.maxRating
+  codeforces_rank: data.platformProfiles.platformProfiles.1.userStats.rank
+  codeforces_max_rank: data.platformProfiles.platformProfiles.1.userStats.maxRank
+  codeforces_solved: data.platformProfiles.platformProfiles.1.totalQuestionStats.totalQuestionCounts
+  codeforces_avatar: data.platformProfiles.platformProfiles.1.userStats.titlePhoto
+  hackerrank_handle: data.platformProfiles.platformProfiles.2.userStats.handle
+  hackerrank_verified: data.platformProfiles.platformProfiles.2.isVerified
+  hackerrank_certificate: data.platformProfiles.platformProfiles.2.certificateStats.certificates.0.name
+  hackerrank_certificate_type: data.platformProfiles.platformProfiles.2.certificateStats.certificates.0.type
+  codechef_handle: data.platformProfiles.platformProfiles.3.userStats.handle
+  codechef_rating: data.platformProfiles.platformProfiles.3.userStats.currentRating
+  codechef_stars: data.platformProfiles.platformProfiles.3.userStats.stars
+  codechef_solved: data.platformProfiles.platformProfiles.3.totalQuestionStats.totalQuestionCounts
