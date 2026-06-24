@@ -1,0 +1,15 @@
+path: https://codeberg.org/api/v1/users/%s
+mode: JSON
+category: development
+timeout: 5
+selectors:
+  username: username
+  email: email
+  avatar: avatar_url
+  profile: html_url
+  created: created
+  location: location
+  website: website
+  bio: description
+  followers: followers_count
+  following: following_count

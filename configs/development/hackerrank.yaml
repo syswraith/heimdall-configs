@@ -1,0 +1,12 @@
+path: https://www.hackerrank.com/rest/contests/master/hackers/%s/profile
+mode: JSON
+category: development
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  username: model.username
+  name: model.name
+  country: model.country
+  school: model.school
+  avatar: model.avatar

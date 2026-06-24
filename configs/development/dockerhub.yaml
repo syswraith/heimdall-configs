@@ -1,0 +1,13 @@
+path: https://hub.docker.com/v2/users/%s
+mode: JSON
+category: development
+timeout: 5
+selectors:
+  username: username
+  full_name: full_name
+  location: location
+  company: company
+  profile: profile_url
+  joined: date_joined
+  avatar: gravatar_url
+  gravatar_email: gravatar_email

@@ -1,0 +1,15 @@
+path: https://dev.to/api/users/by_username?url=%s
+mode: JSON
+category: development
+timeout: 5
+selectors:
+  id: id
+  username: username
+  name: name
+  summary: summary
+  location: location
+  joined: joined_at
+  github: github_username
+  twitter: twitter_username
+  website: website_url
+  profile_image: profile_image

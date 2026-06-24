@@ -1,0 +1,14 @@
+path: https://gitlab.com/api/v4/users?username=%s
+mode: JSON
+category: development
+timeout: 5
+selectors:
+  id: 0.id
+  username: 0.username
+  name: 0.name
+  bio: 0.bio
+  location: 0.location
+  avatar: 0.avatar_url
+  profile: 0.web_url
+  created: 0.created_at
+  public_email: 0.public_email
