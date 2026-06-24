@@ -1,0 +1,21 @@
+path: https://www.instagram.com/api/v1/users/web_profile_info/?username=%s
+mode: JSON
+category: social_media
+timeout: 5
+headers:
+  Accept: '*/*'
+  x-ig-app-id: '936619743392459'
+  referer: https://www.instagram.com/%s/
+selectors:
+  username: data.user.username
+  full_name: data.user.full_name
+  biography: data.user.biography
+  followers: data.user.edge_followed_by.count
+  following: data.user.edge_follow.count
+  posts: data.user.edge_owner_to_timeline_media.count
+  private: data.user.is_private
+  verified: data.user.is_verified
+  business_account: data.user.is_business_account
+  professional_account: data.user.is_professional_account
+  profile_picture: data.user.profile_pic_url_hd
+  user_id: data.user.id
