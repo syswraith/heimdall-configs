@@ -1,8 +1,8 @@
 from pathlib import Path
+import shutil
 import yaml
 
 CONFIG_FILE = Path("config.yaml")
-OUTPUT_DIR = Path("configs")
 SERVICES_FILE = Path(".services_added")
 
 with CONFIG_FILE.open("r", encoding="utf-8") as f:
@@ -17,7 +17,7 @@ for service_entry in config.get("services", []):
 
     category = data.get("category", "uncategorized")
 
-    category_dir = OUTPUT_DIR / category
+    category_dir = Path(category)
     category_dir.mkdir(parents=True, exist_ok=True)
 
     output_file = category_dir / f"{name}.yaml"
