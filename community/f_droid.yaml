@@ -1,0 +1,15 @@
+path: https://forum.f-droid.org/u/%s.json
+mode: JSON
+category: community
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: user.id
+  name: user.name
+  username: user.username
+  title: user.title
+  joined: user.created_at
+  last_seen: user.last_seen_at
+  last_posted: user.last_posted_at
+  avatar: user.avatar_template

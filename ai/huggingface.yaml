@@ -1,0 +1,13 @@
+path: https://huggingface.co/api/users/%s/overview
+mode: JSON
+category: ai
+timeout: 5
+follow_redirects: true
+selectors:
+  name: fullname
+  avatar: avatarUrl
+  models: numModels
+  datasets: numDatasets
+  spaces: numSpaces
+  followers: numFollowers
+  following: numFollowing

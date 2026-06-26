@@ -1,0 +1,16 @@
+path: https://gitee.com/api/v5/users/%s
+mode: JSON
+category: development
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: id
+  username: login
+  name: name
+  avatar: avatar_url
+  bio: bio
+  blog: blog
+  followers: followers
+  following: following
+  public_repos: public_repos

@@ -1,0 +1,15 @@
+path: https://www.codewars.com/api/v1/users/%s
+mode: JSON
+category: development
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: id
+  username: username
+  name: name
+  honor: honor
+  clan: clan
+  leaderboard_position: leaderboardPosition
+  rank: ranks.overall.name
+  score: ranks.overall.score

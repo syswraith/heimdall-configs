@@ -1,4 +1,4 @@
-path: https://codeberg.org/api/v1/users/%s
+path: https://gitea.com/api/v1/users/%s
 mode: JSON
 category: development
 timeout: 5

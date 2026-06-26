@@ -1,0 +1,19 @@
+path: https://coderwall.com/%s.json
+mode: JSON
+category: development
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: id
+  username: username
+  name: name
+  location: location
+  karma: karma
+  company: company
+  about: about
+  avatar: thumbnail
+  github: accounts.github
+  twitter: accounts.twitter
+  linkedin: accounts.linkedin
+  website: accounts.website

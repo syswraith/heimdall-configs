@@ -1,0 +1,17 @@
+path: https://codeforces.com/api/user.info?handles=%s
+mode: JSON
+category: development
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  first_name: result.0.firstName
+  last_name: result.0.lastName
+  country: result.0.country
+  city: result.0.city
+  organization: result.0.organization
+  rating: result.0.rating
+  max_rating: result.0.maxRating
+  rank: result.0.rank
+  max_rank: result.0.maxRank
+  friend_of_count: result.0.friendOfCount

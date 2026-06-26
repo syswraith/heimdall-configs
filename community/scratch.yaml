@@ -1,0 +1,10 @@
+path: https://api.scratch.mit.edu/users/%s
+mode: JSON
+category: community
+timeout: 5
+follow_redirects: true
+selectors:
+  id: id
+  joined: history.joined
+  country: profile.country
+  avatar: profile.images.90x90
