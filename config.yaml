@@ -1,0 +1,52 @@
+services:
+  - boosty:
+      path: "https://api.boosty.to/v1/blog/%s"
+      mode: JSON
+      category: community
+      timeout: 5
+
+      headers:
+        Accept: "application/json"
+
+      selectors:
+        id: "owner.id"
+        subscribers: "count.subscribers"
+        posts: "count.posts"
+        title: "title"
+        has_discord: "owner.externalApps.discord.hasAccount"
+        has_telegram: "owner.externalApps.telegram.hasAccount"
+
+  - fansly:
+      path: "https://apiv2.fansly.com/api/v1/account?usernames=%s"
+      mode: JSON
+      category: community
+      timeout: 5
+
+      headers:
+        Accept: "application/json"
+
+      selectors:
+        id: "response.0.id"
+        display_name: "response.0.displayName"
+        followers: "response.0.followCount"
+        images: "response.0.timelineStats.imageCount"
+        videos: "response.0.timelineStats.videoCount"
+
+  - vimeo:
+      path: "https://vimeo.com/api/v2/%s/info.json"
+      mode: JSON
+      category: community
+      timeout: 5
+
+      headers:
+        Accept: "application/json"
+
+      selectors:
+        id: "id"
+        created_on: "created_on"
+        location: "location"
+        bio: "bio"
+        videos: "total_videos_uploaded"
+        contacts: "total_contacts"
+        channels: "total_channels"
+        liked: "total_videos_liked"
