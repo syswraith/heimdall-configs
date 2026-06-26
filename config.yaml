@@ -1,0 +1,257 @@
+services:
+
+  - arduino:
+      path: "https://forum.arduino.cc/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - codeberg:
+      path: "https://codeberg.org/api/v1/users/%s"
+      mode: JSON
+      category: development
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "id"
+        username: "login"
+        name: "full_name"
+        email: "email"
+        avatar: "avatar_url"
+        profile: "html_url"
+        created: "created"
+        location: "location"
+        website: "website"
+
+  - codeforces:
+      path: "https://codeforces.com/api/user.info?handles=%s"
+      mode: JSON
+      category: development
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        first_name: "result.0.firstName"
+        last_name: "result.0.lastName"
+        country: "result.0.country"
+        city: "result.0.city"
+        organization: "result.0.organization"
+        rating: "result.0.rating"
+        max_rating: "result.0.maxRating"
+        rank: "result.0.rank"
+        max_rank: "result.0.maxRank"
+        friend_of_count: "result.0.friendOfCount"
+
+  - coderwall:
+      path: "https://coderwall.com/%s.json"
+      mode: JSON
+      category: development
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "id"
+        username: "username"
+        name: "name"
+        location: "location"
+        karma: "karma"
+        company: "company"
+        about: "about"
+        avatar: "thumbnail"
+        github: "accounts.github"
+        twitter: "accounts.twitter"
+        linkedin: "accounts.linkedin"
+        website: "accounts.website"
+
+  - codewars:
+      path: "https://www.codewars.com/api/v1/users/%s"
+      mode: JSON
+      category: development
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "id"
+        username: "username"
+        name: "name"
+        honor: "honor"
+        clan: "clan"
+        leaderboard_position: "leaderboardPosition"
+        rank: "ranks.overall.name"
+        score: "ranks.overall.score"
+
+  - elixir_forum:
+      path: "https://elixirforum.com/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - f_droid:
+      path: "https://forum.f-droid.org/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - gitea:
+      path: "https://gitea.com/api/v1/users/%s"
+      mode: JSON
+      category: development
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "id"
+        username: "login"
+        name: "full_name"
+        email: "email"
+        avatar: "avatar_url"
+        profile: "html_url"
+        created: "created"
+        location: "location"
+        website: "website"
+
+  - gitee:
+      path: "https://gitee.com/api/v5/users/%s"
+      mode: JSON
+      category: development
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "id"
+        username: "login"
+        name: "name"
+        avatar: "avatar_url"
+        bio: "bio"
+        blog: "blog"
+        followers: "followers"
+        following: "following"
+        public_repos: "public_repos"
+  - hashicorp_discuss:
+      path: "https://discuss.hashicorp.com/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - huggingface:
+      path: "https://huggingface.co/api/users/%s/overview"
+      mode: JSON
+      category: ai
+      timeout: 5
+      follow_redirects: true
+      selectors:
+        name: "fullname"
+        avatar: "avatarUrl"
+        models: "numModels"
+        datasets: "numDatasets"
+        spaces: "numSpaces"
+        followers: "numFollowers"
+        following: "numFollowing"
+
+  - kotlin_discuss:
+      path: "https://discuss.kotlinlang.org/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - python_discuss:
+      path: "https://discuss.python.org/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - rust_users:
+      path: "https://users.rust-lang.org/u/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      headers:
+        Accept: "application/json"
+      selectors:
+        id: "user.id"
+        name: "user.name"
+        username: "user.username"
+        title: "user.title"
+        joined: "user.created_at"
+        last_seen: "user.last_seen_at"
+        last_posted: "user.last_posted_at"
+        avatar: "user.avatar_template"
+
+  - scratch:
+      path: "https://api.scratch.mit.edu/users/%s"
+      mode: JSON
+      category: community
+      timeout: 5
+      follow_redirects: true
+      selectors:
+        id: "id"
+        joined: "history.joined"
+        country: "profile.country"
+        avatar: "profile.images.90x90"
