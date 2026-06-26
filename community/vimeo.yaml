@@ -1,0 +1,15 @@
+path: https://vimeo.com/api/v2/%s/info.json
+mode: JSON
+category: community
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: id
+  created_on: created_on
+  location: location
+  bio: bio
+  videos: total_videos_uploaded
+  contacts: total_contacts
+  channels: total_channels
+  liked: total_videos_liked

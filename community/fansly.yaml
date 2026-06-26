@@ -1,0 +1,12 @@
+path: https://apiv2.fansly.com/api/v1/account?usernames=%s
+mode: JSON
+category: community
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: response.0.id
+  display_name: response.0.displayName
+  followers: response.0.followCount
+  images: response.0.timelineStats.imageCount
+  videos: response.0.timelineStats.videoCount

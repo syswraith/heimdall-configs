@@ -1,0 +1,13 @@
+path: https://api.boosty.to/v1/blog/%s
+mode: JSON
+category: community
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: owner.id
+  subscribers: count.subscribers
+  posts: count.posts
+  title: title
+  has_discord: owner.externalApps.discord.hasAccount
+  has_telegram: owner.externalApps.telegram.hasAccount
