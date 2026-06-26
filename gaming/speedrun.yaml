@@ -1,0 +1,16 @@
+path: https://www.speedrun.com/api/v1/users/%s
+mode: JSON
+category: gaming
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  id: data.id
+  name: data.names.international
+  role: data.role
+  signup: data.signup
+  country: data.location.country.names.international
+  region: data.location.region.names.international
+  twitch: data.twitch.uri
+  youtube: data.youtube.uri
+  twitter: data.twitter.uri

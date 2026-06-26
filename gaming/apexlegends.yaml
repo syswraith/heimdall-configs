@@ -1,0 +1,17 @@
+path: https://api.tracker.gg/api/v2/apex/standard/profile/origin/%s
+mode: JSON
+category: gaming
+timeout: 5
+headers:
+  Accept-Language: en-US,en;q=0.5
+  Origin: https://apex.tracker.gg
+  Referer: https://apex.tracker.gg/
+selectors:
+  username: data.platformInfo.platformUserHandle
+  avatar: data.platformInfo.avatarUrl
+  country: data.userInfo.countryCode
+  premium: data.userInfo.isPremium
+  influencer: data.userInfo.isInfluencer
+  active_legend: data.metadata.activeLegendName
+  level: data.segments.0.stats.level.displayValue
+  kills: data.segments.0.stats.kills.displayValue

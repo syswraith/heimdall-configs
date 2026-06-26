@@ -1,0 +1,16 @@
+path: https://api.warframe.market/v2/user/%s
+mode: JSON
+category: gaming
+timeout: 5
+headers:
+  Accept: application/json
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+selectors:
+  id: data.id
+  role: data.role
+  ingame_name: data.ingameName
+  reputation: data.reputation
+  mastery_rank: data.masteryRank
+  status: data.status
+  last_seen: data.lastSeen
+  platform: data.platform

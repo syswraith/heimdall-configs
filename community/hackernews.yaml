@@ -1,0 +1,9 @@
+path: https://hacker-news.firebaseio.com/v0/user/%s.json
+mode: JSON
+category: community
+timeout: 5
+selectors:
+  username: id
+  karma: karma
+  created: created
+  about: about

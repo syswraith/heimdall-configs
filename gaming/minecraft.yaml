@@ -1,0 +1,9 @@
+path: https://api.mojang.com/minecraft/profile/lookup/name/%s
+mode: JSON
+category: gaming
+timeout: 5
+headers:
+  Accept: application/json
+selectors:
+  uuid: id
+  username: name

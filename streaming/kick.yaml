@@ -1,0 +1,12 @@
+path: https://kick.com/api/v2/channels/%s
+mode: JSON
+category: streaming
+timeout: 5
+headers:
+  Accept: application/json
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/114.0.0.0 Safari/537.36
+selectors:
+  id: id
+  slug: slug
+  is_banned: is_banned
