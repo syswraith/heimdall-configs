@@ -1,0 +1,10 @@
+path: https://api.mixcloud.com/%s/
+mode: JSON
+category: music
+timeout: 5
+follow_redirects: true
+selectors:
+  name: name
+  followers: follower_count
+  following: following_count
+  avatar: pictures.large

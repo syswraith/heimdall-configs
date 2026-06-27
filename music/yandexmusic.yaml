@@ -1,0 +1,12 @@
+path: https://music.yandex.ru/handlers/library.jsx?owner=%s
+mode: JSON
+category: music
+timeout: 5
+follow_redirects: true
+selectors:
+  yandex_uid: owner.uid
+  fullname: owner.name
+  is_verified: verified
+  liked_albums: counts.likedAlbums
+  liked_artists: counts.likedArtists
+  has_tracks: hasTracks

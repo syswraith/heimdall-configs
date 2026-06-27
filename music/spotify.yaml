@@ -1,0 +1,14 @@
+path: https://api.stats.fm/api/v1/users/%s
+mode: JSON
+category: music
+timeout: 5
+follow_redirects: true
+selectors:
+  name: item.displayName
+  image: item.image
+  created_at: item.createdAt
+  timezone: item.timezone
+  bio: item.profile.bio
+  pronouns: item.profile.pronouns
+  is_pro: item.isPro
+  is_plus: item.isPlus

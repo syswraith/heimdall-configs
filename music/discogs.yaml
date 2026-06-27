@@ -1,0 +1,17 @@
+path: https://api.discogs.com/users/%s
+mode: JSON
+category: music
+timeout: 5
+selectors:
+  id: id
+  name: name
+  location: location
+  bio: profile
+  joined: registered
+  releases_contributed: releases_contributed
+  releases_rated: releases_rated
+  lists: num_lists
+  collection_items: num_collection
+  wantlist_items: num_wantlist
+  website: home_page
+  avatar: avatar_url

@@ -1,0 +1,15 @@
+path: https://www.bandlab.com/api/v1.3/users/%s
+mode: JSON
+category: music
+timeout: 5
+selectors:
+  id: id
+  name: name
+  bio: about
+  location: place
+  joined: createdOn
+  followers: counters.followers
+  following: counters.following
+  plays: counters.plays
+  bands: counters.bands
+  avatar: picture.url
