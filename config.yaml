@@ -1,0 +1,135 @@
+services:
+  - warpcast:
+      path: "https://client.warpcast.com/v2/user-by-username?username=%s"
+      mode: JSON
+      category: social_media
+      timeout: 5
+      selectors:
+        fid: "result.user.fid"
+        displayname: "result.user.displayName"
+        bio: "result.user.profile.bio.text"
+        location: "result.user.profile.location.description"
+        account_level: "result.user.accountLevel"
+        followers: "result.user.followerCount"
+        following: "result.user.followingCount"
+
+  - sportstracker:
+      path: "https://api.sports-tracker.com/apiserver/v1/user/name/%s"
+      mode: JSON
+      category: community
+      timeout: 5
+      selectors:
+        uuid: "payload.uuid"
+        username: "payload.username"
+        real_name: "payload.realName"
+        country: "payload.country"
+        city: "payload.city"
+        gender: "payload.gender"
+        created: "payload.createdDate"
+        followers: "payload.followersCount"
+        following: "payload.followingCount"
+
+  - pr0gramm:
+      path: "https://pr0gramm.com/api/profile/info?name=%s"
+      mode: JSON
+      category: community
+      timeout: 5
+      selectors:
+        id: "user.id"
+        username: "user.name"
+        registered: "user.registered"
+        score: "user.score"
+        mark: "user.mark"
+        comments: "commentCount"
+        uploads: "uploadCount"
+        tags: "tagCount"
+
+  - picsart:
+      path: "https://api.picsart.com/users/show/%s.json"
+      mode: JSON
+      category: social_media
+      timeout: 5
+      selectors:
+        id: "id"
+        name: "name"
+        status_message: "status_message"
+        followers: "followers_count"
+        following: "following_count"
+        likes: "likes_count"
+        photos: "photos_count"
+
+  - keybase:
+      path: "https://keybase.io/_/api/1.0/user/lookup.json?usernames=%s"
+      mode: JSON
+      category: community
+      timeout: 5
+      selectors:
+        created_at: "them.0.basics.ctime"
+        id_version: "them.0.basics.id_version"
+        full_name: "them.0.profile.full_name"
+        location: "them.0.profile.location"
+        bio: "them.0.profile.bio"
+
+  - imgur:
+      path: "https://api.imgur.com/account/v1/accounts/%s?client_id=546c25a59c58ad7&include=trophies%2Cmedallions"
+      mode: JSON
+      category: social_media
+      timeout: 5
+      selectors:
+        id: "id"
+        bio: "bio"
+        reputation: "reputation_count"
+        reputation_name: "reputation_name"
+        created_at: "created_at"
+        trophies: "trophies"
+
+  - gravatar:
+      path: "https://en.gravatar.com/%s.json"
+      mode: JSON
+      category: community
+      timeout: 5
+      selectors:
+        gravatar_id: "entry.0.hash"
+        image: "entry.0.thumbnailUrl"
+        username: "entry.0.preferredUsername"
+        fullname: "entry.0.name.formatted"
+        bio: "entry.0.aboutMe"
+        location: "entry.0.currentLocation"
+        emails: "entry.0.emails"
+        accounts: "entry.0.accounts"
+        urls: "entry.0.urls"
+
+  - fotka:
+      path: "https://api.fotka.com/v2/user/dataStatic?login=%s"
+      mode: JSON
+      category: social_media
+      timeout: 5
+      selectors:
+        id: "profil.id"
+        sex: "profil.sex"
+        age: "profil.age"
+        city: "profil.city"
+        created: "profil.creationTS"
+        photos: "profil.photosNumber"
+
+  - dailymotion:
+      path: "https://api.dailymotion.com/user/%s?fields=id,username,screenname,description,avatar_720_url,cover_250_url,followers_total,following_total,videos_total,country,created_time,verified,url"
+      mode: JSON
+      category: social_media
+      timeout: 5
+      follow_redirects: true
+      selectors:
+        id: "id"
+        username: "username"
+        screenname: "screenname"
+        description: "description"
+        avatar: "avatar_720_url"
+        cover: "cover_250_url"
+        followers: "followers_total"
+        following: "following_total"
+        videos: "videos_total"
+        country: "country"
+        created_at: "created_time"
+        verified: "verified"
+        profile: "url"
+
