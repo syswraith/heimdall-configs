@@ -1,0 +1,12 @@
+path: https://api.picsart.com/users/show/%s.json
+mode: JSON
+category: social_media
+timeout: 5
+selectors:
+  id: id
+  name: name
+  status_message: status_message
+  followers: followers_count
+  following: following_count
+  likes: likes_count
+  photos: photos_count

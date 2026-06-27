@@ -1,0 +1,11 @@
+path: https://api.fotka.com/v2/user/dataStatic?login=%s
+mode: JSON
+category: social_media
+timeout: 5
+selectors:
+  id: profil.id
+  sex: profil.sex
+  age: profil.age
+  city: profil.city
+  created: profil.creationTS
+  photos: profil.photosNumber

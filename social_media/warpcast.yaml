@@ -1,0 +1,12 @@
+path: https://client.warpcast.com/v2/user-by-username?username=%s
+mode: JSON
+category: social_media
+timeout: 5
+selectors:
+  fid: result.user.fid
+  displayname: result.user.displayName
+  bio: result.user.profile.bio.text
+  location: result.user.profile.location.description
+  account_level: result.user.accountLevel
+  followers: result.user.followerCount
+  following: result.user.followingCount

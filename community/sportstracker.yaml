@@ -1,0 +1,14 @@
+path: https://api.sports-tracker.com/apiserver/v1/user/name/%s
+mode: JSON
+category: community
+timeout: 5
+selectors:
+  uuid: payload.uuid
+  username: payload.username
+  real_name: payload.realName
+  country: payload.country
+  city: payload.city
+  gender: payload.gender
+  created: payload.createdDate
+  followers: payload.followersCount
+  following: payload.followingCount

@@ -1,0 +1,11 @@
+path: https://api.imgur.com/account/v1/accounts/%s?client_id=546c25a59c58ad7&include=trophies%2Cmedallions
+mode: JSON
+category: social_media
+timeout: 5
+selectors:
+  id: id
+  bio: bio
+  reputation: reputation_count
+  reputation_name: reputation_name
+  created_at: created_at
+  trophies: trophies

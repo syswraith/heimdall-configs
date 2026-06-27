@@ -1,0 +1,10 @@
+path: https://keybase.io/_/api/1.0/user/lookup.json?usernames=%s
+mode: JSON
+category: community
+timeout: 5
+selectors:
+  created_at: them.0.basics.ctime
+  id_version: them.0.basics.id_version
+  full_name: them.0.profile.full_name
+  location: them.0.profile.location
+  bio: them.0.profile.bio

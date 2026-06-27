@@ -1,0 +1,14 @@
+path: https://en.gravatar.com/%s.json
+mode: JSON
+category: community
+timeout: 5
+selectors:
+  gravatar_id: entry.0.hash
+  image: entry.0.thumbnailUrl
+  username: entry.0.preferredUsername
+  fullname: entry.0.name.formatted
+  bio: entry.0.aboutMe
+  location: entry.0.currentLocation
+  emails: entry.0.emails
+  accounts: entry.0.accounts
+  urls: entry.0.urls

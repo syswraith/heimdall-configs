@@ -1,0 +1,13 @@
+path: https://pr0gramm.com/api/profile/info?name=%s
+mode: JSON
+category: community
+timeout: 5
+selectors:
+  id: user.id
+  username: user.name
+  registered: user.registered
+  score: user.score
+  mark: user.mark
+  comments: commentCount
+  uploads: uploadCount
+  tags: tagCount
