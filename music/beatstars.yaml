@@ -1,0 +1,13 @@
+category: music
+path: https://core.prod.beatstars.net/auth/graphql
+method: POST
+content_type: application/json
+mode: JSON
+timeout: 10
+body: '{"operationName":"identifierAvailable","variables":{"identifier":"%s"},"query":"query
+  identifierAvailable($identifier: String!) { identifierAvailable(identifier: $identifier)
+  { ...AccountBasicInfo } } fragment AccountBasicInfo on IsIdentifierAvailableResponse
+  { available profileDetails { username artwork { fitInUrl } } }"}'
+selectors:
+  username: data.identifierAvailable.profileDetails.username
+  avatar: data.identifierAvailable.profileDetails.artwork.fitInUrl
