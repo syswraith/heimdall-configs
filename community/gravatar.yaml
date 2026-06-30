@@ -1,7 +1,7 @@
 path: https://en.gravatar.com/%s.json
 mode: JSON
 category: community
-timeout: 5
+timeout: 10
 selectors:
   gravatar_id: entry.0.hash
   image: entry.0.thumbnailUrl

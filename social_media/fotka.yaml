@@ -1,7 +1,7 @@
 path: https://api.fotka.com/v2/user/dataStatic?login=%s
 mode: JSON
 category: social_media
-timeout: 5
+timeout: 10
 selectors:
   id: profil.id
   sex: profil.sex

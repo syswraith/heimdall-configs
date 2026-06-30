@@ -1,7 +1,7 @@
 path: https://hub.docker.com/v2/users/%s
 mode: JSON
 category: development
-timeout: 5
+timeout: 10
 selectors:
   username: username
   full_name: full_name

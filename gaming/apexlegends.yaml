@@ -1,7 +1,7 @@
 path: https://api.tracker.gg/api/v2/apex/standard/profile/origin/%s
 mode: JSON
 category: gaming
-timeout: 5
+timeout: 10
 headers:
   Accept-Language: en-US,en;q=0.5
   Origin: https://apex.tracker.gg

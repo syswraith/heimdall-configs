@@ -1,7 +1,7 @@
 path: https://luarocks.org/modules/%s
 mode: HTTP
 category: development
-timeout: 5
+timeout: 10
 container: body
 selectors:
   error: .not_found_page base_page .base_widget

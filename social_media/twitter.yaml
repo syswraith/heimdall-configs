@@ -1,7 +1,7 @@
 path: https://api.vxtwitter.com/%s
 mode: JSON
 category: social_media
-timeout: 5
+timeout: 10
 selectors:
   created_at: created_at
   description: description

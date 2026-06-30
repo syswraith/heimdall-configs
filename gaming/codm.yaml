@@ -1,7 +1,7 @@
 path: https://callofdutymobile.vercel.app/user/%s
 mode: JSON
 category: gaming
-timeout: 5
+timeout: 10
 selectors:
   nickname: nickname
   country_code: countryCode

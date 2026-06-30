@@ -1,7 +1,7 @@
 path: https://client.warpcast.com/v2/user-by-username?username=%s
 mode: JSON
 category: social_media
-timeout: 5
+timeout: 10
 selectors:
   fid: result.user.fid
   displayname: result.user.displayName

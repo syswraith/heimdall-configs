@@ -1,7 +1,7 @@
 path: https://api.mojang.com/minecraft/profile/lookup/name/%s
 mode: JSON
 category: gaming
-timeout: 5
+timeout: 10
 headers:
   Accept: application/json
 selectors:

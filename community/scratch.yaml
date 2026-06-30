@@ -1,7 +1,7 @@
 path: https://api.scratch.mit.edu/users/%s
 mode: JSON
 category: community
-timeout: 5
+timeout: 10
 follow_redirects: true
 selectors:
   id: id

@@ -1,7 +1,7 @@
 path: https://tryhackme.com/api/v2/public-profile?username=%s
 mode: HEADLESS_JSON
 category: development
-timeout: 15
+timeout: 10
 sleep: 5
 selectors:
   avatar: data.avatar

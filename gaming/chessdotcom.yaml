@@ -1,4 +1,4 @@
 path: https://api.chess.com/pub/player/%s
 mode: JSON
 category: gaming
-timeout: 5
+timeout: 10

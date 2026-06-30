@@ -1,7 +1,7 @@
 path: https://api.dailymotion.com/user/%s?fields=id,username,screenname,description,avatar_720_url,cover_250_url,followers_total,following_total,videos_total,country,created_time,verified,url
 mode: JSON
 category: social_media
-timeout: 5
+timeout: 10
 follow_redirects: true
 selectors:
   id: id

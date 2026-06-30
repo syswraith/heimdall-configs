@@ -1,7 +1,7 @@
 path: https://www.codewars.com/api/v1/users/%s
 mode: JSON
 category: development
-timeout: 5
+timeout: 10
 headers:
   Accept: application/json
 selectors:

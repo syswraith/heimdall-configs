@@ -1,7 +1,7 @@
 path: https://forum.f-droid.org/u/%s.json
 mode: JSON
 category: community
-timeout: 5
+timeout: 10
 headers:
   Accept: application/json
 selectors:

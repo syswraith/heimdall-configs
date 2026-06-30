@@ -1,7 +1,7 @@
 path: https://gitlab.com/api/v4/users?username=%s
 mode: JSON
 category: development
-timeout: 5
+timeout: 10
 selectors:
   id: 0.id
   username: 0.username

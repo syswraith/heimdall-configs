@@ -1,7 +1,7 @@
 path: https://api.discogs.com/users/%s
 mode: JSON
 category: music
-timeout: 5
+timeout: 10
 selectors:
   id: id
   name: name

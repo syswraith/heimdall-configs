@@ -1,7 +1,7 @@
 path: https://api.warframe.market/v2/user/%s
 mode: JSON
 category: gaming
-timeout: 5
+timeout: 10
 headers:
   Accept: application/json
   User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36

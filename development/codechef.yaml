@@ -1,7 +1,7 @@
 path: https://codechef.com/users/%s
 mode: HTTP
 category: development
-timeout: 5
+timeout: 10
 container: body
 redirects_to: https://www.codechef.com/
 selectors:
