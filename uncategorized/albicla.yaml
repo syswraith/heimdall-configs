@@ -1,0 +1,6 @@
+path: https://albicla.com/%s/post/1
+mode: HTTP
+timeout: 10
+container: html
+selectors:
+  error: body:contains("404 Nie znaleziono użytkownika")

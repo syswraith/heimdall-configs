@@ -1,0 +1,16 @@
+path: https://leetcode.com/graphql
+method: POST
+content_type: application/json
+mode: JSON
+timeout: 10
+body: '{"query":"query userPublicProfile($username: String!) { matchedUser(username:
+  $username) { username profile { realName aboutMe userAvatar countryName company
+  school ranking } } }","variables":{"username":"%s"}}'
+selectors:
+  name: data.matchedUser.profile.realName
+  bio: data.matchedUser.profile.aboutMe
+  avatar: data.matchedUser.profile.userAvatar
+  country: data.matchedUser.profile.countryName
+  company: data.matchedUser.profile.company
+  school: data.matchedUser.profile.school
+  ranking: data.matchedUser.profile.ranking

@@ -1,0 +1,10 @@
+path: https://discord.com/api/v9/unique-username/username-attempt-unauthed
+method: POST
+content_type: application/json
+mode: JSON
+timeout: 5
+headers:
+  referer: https://discord.com/register
+body: '{"username": "%s"}'
+selectors:
+  taken: taken
