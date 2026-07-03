@@ -1,6 +1,7 @@
 path: https://www.wattpad.com/user/%s
 mode: HTTP
 category: community
+timeout: 5
 container: body
 selectors:
   error: '#urgent-announcement > div > div > div > div > strong:nth-child(1)'
