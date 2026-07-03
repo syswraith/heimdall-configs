@@ -4,7 +4,7 @@ category: community
 timeout: 5
 container: body
 selectors:
-  error: '#urgent-announcement > div > div > div > div > strong:nth-child(1)'
+  error: '#profile-header > header > div.restricted-state'
   banner: '#app-container > div > header[attr=style]'
   pfp: div.avatar.avatar-profile.center-block > div.component-wrapper > img[attr=src]
   works: '#app-container > div > header > div.row.header-metadata > div:nth-child(1)
