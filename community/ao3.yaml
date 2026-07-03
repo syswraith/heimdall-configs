@@ -1,0 +1,11 @@
+path: https://archiveofourown.org/users/%s/profile
+mode: HTTP
+category: community
+timeout: 10
+container: '#main'
+redirects_to: https://archiveofourown.org/
+selectors:
+  pseuds: dd.pseuds
+  bio: div.user.home.profile > div.wrapper > dl > dd:nth-child(4)
+  pfp: div.user.home.profile > div.primary.header.module > p > a > img[attr=src]
+  joined: div.user.home.profile > div.wrapper > dl > dd:nth-child(4)

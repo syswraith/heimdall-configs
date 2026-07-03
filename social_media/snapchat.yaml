@@ -1,0 +1,11 @@
+path: https://www.snapchat.com/@%s
+mode: OPENGRAPH
+category: social_media
+timeout: 5
+selectors:
+  title: title
+  description: description
+  site: site_name
+  profile: url
+  avatar: image
+  favicon: favicon

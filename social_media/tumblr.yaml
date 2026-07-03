@@ -1,0 +1,11 @@
+path: https://www.tumblr.com/%s
+mode: OPENGRAPH
+category: social_media
+timeout: 5
+selectors:
+  title: title
+  description: description
+  profile: url
+  site: site_name
+  avatar: image
+  favicon: favicon
