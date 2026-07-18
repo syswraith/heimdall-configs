@@ -1,8 +1,0 @@
-path: https://sourceforge.net/u/%s/profile/
-mode: OPENGRAPH
-category: development
-timeout: 10
-selectors:
-  title: title
-  description: description
-  profile: url

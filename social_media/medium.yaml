@@ -1,9 +1,0 @@
-path: https://medium.com/@%s
-mode: OPENGRAPH
-category: social_media
-timeout: 10
-selectors:
-  title: title
-  description: description
-  avatar: image
-  profile: url
