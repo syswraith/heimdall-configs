@@ -23,7 +23,7 @@ jobs:
         run: pip install pyyaml
 
       - name: Split config
-        run: python ./split.py
+        run: python ./.split.py
 
       - name: Commit changes
         run: |
