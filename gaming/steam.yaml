@@ -1,0 +1,15 @@
+path: https://steamcommunity.com/id/%s
+mode: HTTP
+category: gaming
+timeout: 30
+sleep: 2
+container: body
+selectors:
+  error: .error_ctn
+  pfp: .playerAvatar img
+  level: .profile_header_badgeinfo_badge_area span
+  badges: .profile_badges .profile_count_link_total
+  games: .profile_item_links > div:nth-child(1) .profile_count_link_total
+  friends: '#responsive_groupfriends_element_ctn .profile_count_link_total'
+  recent_game: div > div.profile_content > div > div.profile_leftcol > div > div.profile_customization_block
+    > div.recent_games > div:nth-child(1) > div > div > div.game_name > a
