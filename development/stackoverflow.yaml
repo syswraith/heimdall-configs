@@ -1,0 +1,14 @@
+path: https://api.stackexchange.com/2.3/users?inname=%s&site=stackoverflow
+mode: JSON
+category: development
+timeout: 10
+selectors:
+  id: items.0.user_id
+  display_name: items.0.display_name
+  reputation: items.0.reputation
+  location: items.0.location
+  avatar: items.0.profile_image
+  link: items.0.link
+  badges_gold: items.0.badge_counts.gold
+  badges_silver: items.0.badge_counts.silver
+  badges_bronze: items.0.badge_counts.bronze

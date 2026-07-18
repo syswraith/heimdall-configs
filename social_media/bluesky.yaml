@@ -1,0 +1,14 @@
+path: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=%s
+mode: JSON
+category: social_media
+timeout: 10
+selectors:
+  did: did
+  handle: handle
+  display_name: displayName
+  description: description
+  avatar: avatar
+  followers: followersCount
+  following: followsCount
+  posts: postsCount
+  created_at: createdAt

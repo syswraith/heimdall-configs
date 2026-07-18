@@ -1,0 +1,9 @@
+path: https://%s.bandcamp.com
+mode: OPENGRAPH
+category: music
+timeout: 10
+selectors:
+  title: title
+  description: description
+  avatar: image
+  profile: url

@@ -1,0 +1,15 @@
+path: https://api.ivr.fi/v2/twitch/user?login=%s
+mode: JSON
+category: streaming
+timeout: 10
+selectors:
+  id: 0.id
+  login: 0.login
+  display_name: 0.displayName
+  bio: 0.description
+  created_at: 0.createdAt
+  followers: 0.followers
+  banned: 0.banned
+  avatar: 0.logo
+  is_partner: 0.roles.isPartner
+  is_affiliate: 0.roles.isAffiliate

@@ -1,0 +1,12 @@
+path: https://api.bitbucket.org/2.0/users/%s
+mode: JSON
+category: development
+timeout: 10
+selectors:
+  username: username
+  display_name: display_name
+  uuid: uuid
+  created_on: created_on
+  location: location
+  website: website
+  avatar: links.avatar.href

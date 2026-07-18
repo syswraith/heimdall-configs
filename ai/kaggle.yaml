@@ -1,0 +1,8 @@
+path: https://www.kaggle.com/%s
+mode: HTTP
+category: ai
+timeout: 10
+container: head
+selectors:
+  error: 'title:contains("Kaggle: Your Home for Data Science")'
+  title: title

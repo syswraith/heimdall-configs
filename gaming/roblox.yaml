@@ -1,0 +1,11 @@
+path: https://users.roblox.com/v1/usernames/users
+method: POST
+body: '{"usernames":["%s"],"excludeBannedUsers":false}'
+content_type: application/json
+mode: JSON
+category: gaming
+timeout: 10
+selectors:
+  id: data.0.id
+  name: data.0.name
+  display_name: data.0.displayName

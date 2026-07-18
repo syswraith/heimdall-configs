@@ -1,0 +1,15 @@
+path: https://www.reddit.com/user/%s/about.json
+mode: JSON
+headers:
+  Accept: application/json
+category: social_media
+timeout: 10
+selectors:
+  id: data.id
+  name: data.name
+  created: data.created_utc
+  link_karma: data.link_karma
+  comment_karma: data.comment_karma
+  verified: data.verified
+  is_gold: data.is_gold
+  avatar: data.icon_img
