@@ -1,0 +1,179 @@
+services:
+  - stackoverflow:
+      path: https://api.stackexchange.com/2.3/users?inname=%s&site=stackoverflow
+      mode: JSON
+      category: development
+      timeout: 10
+      selectors:
+        id: items.0.user_id
+        display_name: items.0.display_name
+        reputation: items.0.reputation
+        location: items.0.location
+        avatar: items.0.profile_image
+        link: items.0.link
+        badges_gold: items.0.badge_counts.gold
+        badges_silver: items.0.badge_counts.silver
+        badges_bronze: items.0.badge_counts.bronze
+
+  - npm:
+      path: https://registry.npmjs.org/-/user/org.couchdb.user:%s
+      mode: JSON
+      category: development
+      timeout: 10
+      selectors:
+        name: name
+        email: email
+        fullname: fullname
+        github: github
+        twitter: twitter
+
+  - pypi:
+      path: https://pypi.org/user/%s/
+      mode: OPENGRAPH
+      category: development
+      timeout: 10
+      selectors:
+        title: title
+        description: description
+        profile: url
+
+  - sourceforge:
+      path: https://sourceforge.net/u/%s/profile/
+      mode: OPENGRAPH
+      category: development
+      timeout: 10
+      selectors:
+        title: title
+        description: description
+        profile: url
+
+  - bitbucket:
+      path: https://api.bitbucket.org/2.0/users/%s
+      mode: JSON
+      category: development
+      timeout: 10
+      selectors:
+        username: username
+        display_name: display_name
+        uuid: uuid
+        created_on: created_on
+        location: location
+        website: website
+        avatar: links.avatar.href
+
+  - roblox:
+      path: https://users.roblox.com/v1/usernames/users
+      method: POST
+      body: '{"usernames":["%s"],"excludeBannedUsers":false}'
+      content_type: application/json
+      mode: JSON
+      category: gaming
+      timeout: 10
+      selectors:
+        id: data.0.id
+        name: data.0.name
+        display_name: data.0.displayName
+
+  - soundcloud:
+      path: https://soundcloud.com/%s
+      mode: OPENGRAPH
+      category: music
+      timeout: 10
+      selectors:
+        title: title
+        description: description
+        avatar: image
+        profile: url
+
+  - bandcamp:
+      path: https://%s.bandcamp.com
+      mode: OPENGRAPH
+      category: music
+      timeout: 10
+      selectors:
+        title: title
+        description: description
+        avatar: image
+        profile: url
+
+  - kaggle:
+      path: https://www.kaggle.com/%s
+      mode: HTTP
+      category: ai
+      timeout: 10
+      container: head
+      selectors:
+        error: 'title:contains("Kaggle: Your Home for Data Science")'
+        title: title
+
+  - reddit:
+      path: https://www.reddit.com/user/%s/about.json
+      mode: JSON
+      headers:
+        Accept: application/json
+      category: social_media
+      timeout: 10
+      selectors:
+        id: data.id
+        name: data.name
+        created: data.created_utc
+        link_karma: data.link_karma
+        comment_karma: data.comment_karma
+        verified: data.verified
+        is_gold: data.is_gold
+        avatar: data.icon_img
+
+  - bluesky:
+      path: https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=%s
+      mode: JSON
+      category: social_media
+      timeout: 10
+      selectors:
+        did: did
+        handle: handle
+        display_name: displayName
+        description: description
+        avatar: avatar
+        followers: followersCount
+        following: followsCount
+        posts: postsCount
+        created_at: createdAt
+
+  - medium:
+      path: https://medium.com/@%s
+      mode: OPENGRAPH
+      category: social_media
+      timeout: 10
+      selectors:
+        title: title
+        description: description
+        avatar: image
+        profile: url
+
+  - twitch:
+      path: https://api.ivr.fi/v2/twitch/user?login=%s
+      mode: JSON
+      category: streaming
+      timeout: 10
+      selectors:
+        id: 0.id
+        login: 0.login
+        display_name: 0.displayName
+        bio: 0.description
+        created_at: 0.createdAt
+        followers: 0.followers
+        banned: 0.banned
+        avatar: 0.logo
+        is_partner: 0.roles.isPartner
+        is_affiliate: 0.roles.isAffiliate
+
+  - youtube:
+      path: https://www.youtube.com/@%s
+      mode: OPENGRAPH
+      category: streaming
+      timeout: 10
+      selectors:
+        title: title
+        description: description
+        avatar: image
+        profile: url
