@@ -1,0 +1,14 @@
+path: https://www.artstation.com/users/%s/quick.json
+mode: JSON
+category: art
+timeout: 15
+sleep: 1
+selectors:
+  username: username
+  full_name: full_name
+  headline: headline
+  avatar: image_url
+  location: location
+  website: website
+  pro: is_pro
+  staff: is_staff
