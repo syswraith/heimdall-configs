@@ -1,0 +1,29 @@
+services:
+  - artstation:
+      path: https://www.artstation.com/users/%s/quick.json
+      mode: JSON
+      category: art
+      timeout: 15
+      sleep: 1
+      selectors:
+        username: username
+        full_name: full_name
+        headline: headline
+        avatar: image_url
+        location: location
+        website: website
+        pro: is_pro
+        staff: is_staff
+
+  - listenbrainz:
+      path: https://api.listenbrainz.org/1/user/%s/listens?count=1
+      mode: JSON
+      category: music
+      timeout: 15
+      sleep: 1
+      selectors:
+        user_id: payload.user_id
+        artist: payload.listens.0.track_metadata.artist_name
+        track: payload.listens.0.track_metadata.track_name
+        release: payload.listens.0.track_metadata.release_name
+
